@@ -5,14 +5,28 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Test</title>
+      <link rel="stylesheet" href="css/styles.css">
    </head>
 <body>
-    <form>
-        <label>Usuario</label>
-        <input type="text" id="usuario">
-        <label>Contraseña</label>
+    <form id="registro">
+        <label for="email">
+            Correo electrónico
+            <span id="validacion-email"></span>
+        </label>
+        <input type="email" id="email">
+        <label for="password">
+            Contraseña
+            <span id="validacion-password"></span>
+        </label>
         <input type="password" id="password">
-        <button id="btn">Enviar</button>
+        <label for="repita-password">
+            Repita la contraseña
+            <span id="validacion-repita-password"></span>
+        </label>
+        <input type="password" id="repita-password">
+        <div class="buttons">
+            <button id="btn" disabled>Enviar</button>
+        </div>
     </form>
     <script src="./js/main.js"></script>
 </body>

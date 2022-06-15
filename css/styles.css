@@ -56,3 +56,8 @@ button.secondary {
     background-color: white;
     color: #d7530c;
 }
+
+button:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
